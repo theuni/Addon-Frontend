@@ -1,0 +1,99 @@
+/*
+    anythingSlider v1.2
+    
+    By Chris Coyier: http://css-tricks.com
+    with major improvements by Doug Neiner: http://pixelgraphics.us/
+    based on work by Remy Sharp: http://jqueryfordesigners.com/
+*/
+.anythingSlider  	{
+					width:960px;
+					height:400px;
+					margin:0 auto 20px;
+					padding:10px;
+					border-radius:4px;
+					-moz-border-radius:4px;
+					-khtml-border-radius:4px;
+					-webkit-border-radius:4px;
+					box-shadow:0 1px 3px rgba(0, 0, 0, 0.2);
+					-moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.2);
+					-webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.2);
+					background:#fff;
+					position:relative;
+					*z-index:-1;
+					}
+
+.anythingSlider .wrapper {
+					position:relative;
+					width:960px;
+					height:400px;
+					margin:0 auto;
+					}
+
+                                        /* Width below is max for Opera */
+.anythingSlider .wrapper ul             { width: 32700px; list-style: none; position: absolute; top: 0; left: 0; background: #fff; margin: 0; }
+.anythingSlider .wrapper ul li          { display: block; float: left; padding: 0; height: 400px; width: 960px; margin: 0; }
+.anythingSlider .arrow	{
+					position:absolute;
+					width:53px;
+					height:60px;
+					text-indent:-9999px;
+					top:160px;
+					cursor: pointer; 
+					z-index:1001;
+					}
+.anythingSlider .arrow a				{background:none !important;}
+.anythingSlider .forward                {left:94px;}
+.anythingSlider .back                   {left:-855px;}
+.anythingSlider .forward:hover          {background-position: 0 -60px;}
+.anythingSlider .back:hover             {background-position: 0 -60px;}
+
+.thumbNav			{
+					position: absolute;
+					right:5px;
+					top: 15px;
+					z-index:1000;
+					}
+
+.thumbNav li		{float:left; margin-right:10px;}
+.thumbNav a			{
+					display: block;
+					width:16px;
+					height: 15px;
+					overflow:hidden;
+					outline:none;
+					margin: 0;
+					text-indent:-9999px;
+										}
+
+.start-stop			{display:none !important;}
+
+/*
+  Prevents
+*/
+.anythingSlider .wrapper ul ul          { position: static; margin: 0; background: none; overflow: visible; width: auto; border: 0; }
+.anythingSlider .wrapper ul ul li       { float: none; height: auto; width: auto; background: none; }
+
+.textSlide			{
+					width: 960px;
+					height: 400px;
+					position:relative;
+					}
+					
+.textSlide h1		{
+					color:#fff;
+					line-height:1.1em;
+					margin-bottom:25px;
+					}
+					
+.txt_slide			{
+					width:240px;
+					padding:50px 30px;
+					float:right;
+					}
+					
+.slide_pic			{
+					width:660px;
+					height:400px;
+					overflow:hidden;
+					float:left;
+					}
