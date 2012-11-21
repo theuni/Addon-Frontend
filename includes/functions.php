@@ -1,7 +1,6 @@
 <?php
 // PHP Functions //
 
-
 //php function to check whether the url exists or not and validate it  
 function check_url($url)  
 {  
